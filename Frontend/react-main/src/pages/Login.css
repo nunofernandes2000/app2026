@@ -1,0 +1,119 @@
+/* Página */
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* Cartão */
+.login-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    animation: fadeIn 0.6s ease;
+}
+
+/* Header */
+.login-header h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #1e3c72;
+}
+
+.login-header p {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Form */
+.login-form {
+    margin-top: 28px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-size: 13px;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.input-group input {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #1e3c72;
+    box-shadow: 0 0 0 3px rgba(30,60,114,0.15);
+}
+
+/* Password */
+.password-wrapper {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    font-size: 12px;
+    color: #1e3c72;
+    cursor: pointer;
+}
+
+/* Botão */
+.login-btn {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #1e3c72;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.login-btn:hover {
+    background: #16315d;
+}
+
+.login-btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+/* Footer */
+.login-footer {
+    margin-top: 22px;
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}

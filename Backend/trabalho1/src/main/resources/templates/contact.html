@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GNF - Contactos</title>
+    <style>
+        .alert { background: #d4edda; color: #155724; padding: 10px; margin-bottom: 10px; }
+        label { display: block; margin-top: 10px; }
+    </style>
+</head>
+<body>
+<nav>
+    <a th:href="@{/}">Início</a>
+</nav>
+
+<h1>Fale Connosco</h1>
+
+<div th:if="${sucesso}" class="alert">
+    <p th:text="${mensagemFeedback}"></p>
+</div>
+
+<form th:action="@{/contato}" method="post">
+    <label>Nome:</label>
+    <input type="text" name="nome" required>
+
+    <label>Mensagem:</label>
+    <textarea name="mensagem" required></textarea>
+
+    <br><br>
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>

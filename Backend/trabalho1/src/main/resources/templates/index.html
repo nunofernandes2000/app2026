@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>GNF - Início</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        nav a { margin-right: 15px; text-decoration: none; color: blue; }
+        .hero { background: #eee; padding: 20px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+<nav>
+    <a th:href="@{/}">Início</a>
+    <a th:href="@{/sobre}">Sobre</a>
+    <a th:href="@{/portfolio}">Portfólio</a>
+    <a th:href="@{/contato}">Contactos</a>
+</nav>
+
+<div class="hero">
+    <h1>Bem-vindo à GNF</h1>
+    <p>Inovação e Design.</p>
+</div>
+</body>
+</html>

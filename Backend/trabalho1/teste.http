@@ -1,0 +1,25 @@
+POST http://localhost:8080/api/v1/resolucoes/iniciar?alunoId=1&exercicioId=1
+Authorization: Basic YWRtaW5AZ25mLnB0OjEyMzQ=
+Content-Type: application/json
+
+### 1. O Aluno começa o Exercício
+POST http://localhost:8080/api/v1/resolucoes/iniciar?alunoId=1&exercicioId=1
+Authorization: Basic YWRtaW5AZ25mLnB0OjEyMzQ=
+Content-Type: application/json
+
+### 2. O Aluno avança
+POST http://localhost:8080/api/v1/resolucoes/1/avancar
+Authorization: Basic YWRtaW5AZ25mLnB0OjEyMzQ=
+Content-Type: application/json
+
+### 3. O Aluno pede ajuda (SOS)
+# Isto cumpre o requisito: "O Estudante deve poder chamar o docente"
+POST http://localhost:8080/api/v1/resolucoes/1/ajuda
+Authorization: Basic YWRtaW5AZ25mLnB0OjEyMzQ=
+Content-Type: application/json
+
+### 4. O Professor dá nota 18 e fecha o exercício
+# Isto cumpre o requisito: "O docente pode atribuir uma nota e terminar o exercício"
+POST http://localhost:8080/api/v1/resolucoes/1/avaliar?nota=18.0
+Authorization: Basic YWRtaW5AZ25mLnB0OjEyMzQ=
+Content-Type: application/json
